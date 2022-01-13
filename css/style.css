@@ -11,6 +11,11 @@ body {
     background-color: rgb(28, 28, 52);
 }
 
+.btn:hover{
+    background: #66dbea;
+    background: linear-gradient(to right, rgba(102, 219, 234, 1), rgba(118, 75, 162, 1))
+}
+
 #top {
     background-color: #342b6686;
     border-radius: 50%;
@@ -179,6 +184,18 @@ body {
 /* gallery */
 .dis-none {
     display: none;
+}
+.gallery .row>div{
+    overflow: hidden;
+}
+.gallery img{
+    background: black;
+    opacity: .7;
+    transition: .4s;
+}
+.gallery img:hover{
+    opacity: 1;
+    transform: scale(1.3);
 }
 
 
