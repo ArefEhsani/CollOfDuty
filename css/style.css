@@ -97,7 +97,8 @@ body {
 
 .btn-join:hover {
     background-color: #1266F1;
-    box-shadow: 0 0 10px #1298f1;
+    box-shadow: 0 0 20px #1298f1;
+    font-weight: bold;
 
 }
 
@@ -109,7 +110,7 @@ body {
 
 
 
-/* war  */
+/* start  */
 .arrow {
     position: absolute;
     width: 100%;
@@ -174,7 +175,6 @@ body {
 
 
 /* reason */
-
 .reason {
     width: 100px;
     height: 100px;
