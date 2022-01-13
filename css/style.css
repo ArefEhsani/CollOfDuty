@@ -11,7 +11,23 @@ body {
     background-color: rgb(28, 28, 52);
 }
 
+#top {
+    background-color: #342b6686;
+    border-radius: 50%;
+    opacity: .7;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    right: 30px;
+    bottom: 30px;
+}
 
+#top:hover {
+    background-color: #3412f1;
+    opacity: 1;
+}
 
 /* home */
 .home {
@@ -185,6 +201,8 @@ body {
     background: #66dbea;
     background: -webkit-linear-gradient(to right, rgba(102, 219, 234, 1), rgba(118, 75, 162, 1));
     background: linear-gradient(to right, rgba(102, 219, 234, 1), rgba(118, 75, 162, 1));
+    font-size: 20px;
+    font-weight: bold;
 }
 
 
