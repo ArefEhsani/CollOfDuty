@@ -31,18 +31,18 @@ window.addEventListener("scroll", e => {
 
 
 /* btn more and fewer for gallery */
-document.getElementById("btn-more").onclick = function () {
+document.getElementById("btn-more").onclick = function() {
     List = document.querySelectorAll(".dis-none")
-    
+
     for (let i = 0; i < List.length; i++) {
         List[i].style.display = "inline"
     }
     document.getElementById("btn-more").style.display = "none"
 }
 
-document.getElementById("btn-fewer").onclick = function () {
+document.getElementById("btn-fewer").onclick = function() {
     List = document.querySelectorAll(".dis-none")
-    
+
     for (let i = 0; i < List.length; i++) {
         List[i].style.display = "none"
     }
@@ -52,7 +52,7 @@ document.getElementById("btn-fewer").onclick = function () {
 
 /* game */
 /* part 1 */
-document.getElementById("game-1").onclick = function () {
+document.getElementById("game-1").onclick = function() {
     var myElemnt1 = document.querySelector("#game-1");
     var myElemnt2 = document.querySelector("#game-2");
     var myElemnt3 = document.querySelector("#game-3");
@@ -71,7 +71,7 @@ document.getElementById("game-1").onclick = function () {
 }
 
 /* part 2 */
-document.getElementById("game-2").onclick = function () {
+document.getElementById("game-2").onclick = function() {
     var myElemnt1 = document.querySelector("#game-1");
     var myElemnt2 = document.querySelector("#game-2");
     var myElemnt3 = document.querySelector("#game-3");
@@ -90,7 +90,7 @@ document.getElementById("game-2").onclick = function () {
 }
 
 /* part 3 */
-document.getElementById("game-3").onclick = function () {
+document.getElementById("game-3").onclick = function() {
     var myElemnt1 = document.querySelector("#game-1");
     var myElemnt2 = document.querySelector("#game-2");
     var myElemnt3 = document.querySelector("#game-3");
@@ -108,5 +108,12 @@ document.getElementById("game-3").onclick = function () {
     page3.classList.remove('d-none');
 }
 
+document.getElementById("NextComments").onclick = function() {
+    document.getElementById("comment-part-2").classList.add("active")
+    document.getElementById("comment-part-1").classList.remove("active")
+}
 
-
+document.getElementById("PrevComments").onclick = function() {
+    document.getElementById("comment-part-1").classList.add("active")
+    document.getElementById("comment-part-2").classList.remove("active")
+}
